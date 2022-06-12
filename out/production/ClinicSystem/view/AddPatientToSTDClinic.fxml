@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="809.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPatientToSTDClinicController">
+   <children>
+      <AnchorPane fx:id="AddPatientClinicPan" layoutX="14.0" layoutY="10.0" prefHeight="514.0" prefWidth="594.0" stylesheets="@../StyleSheet.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="10.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="22.0" layoutY="20.0" prefHeight="37.0" prefWidth="267.0" text="ADD PATIENT TO" textFill="#481feddb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="31.0" />
+               </font>
+            </Label>
+            <Separator layoutX="474.0" layoutY="44.0" prefHeight="10.0" prefWidth="79.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="49.0" layoutY="147.0" prefHeight="37.0" prefWidth="171.0" text="Patient ID :" textAlignment="RIGHT" textFill="#481feddb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAddPatientID" layoutX="228.0" layoutY="150.0" onKeyReleased="#on_key_released" prefHeight="31.0" prefWidth="312.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="49.0" layoutY="183.0" prefHeight="37.0" prefWidth="171.0" text="Patient Name :" textAlignment="RIGHT" textFill="#481feddb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAddPatientName" layoutX="228.0" layoutY="186.0" onKeyReleased="#on_key_released" prefHeight="31.0" prefWidth="312.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="49.0" layoutY="220.0" prefHeight="37.0" prefWidth="171.0" text="Patient Age:" textAlignment="RIGHT" textFill="#481feddb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAddPatientAge" layoutX="228.0" layoutY="223.0" onKeyReleased="#on_key_released" prefHeight="31.0" prefWidth="312.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="48.0" layoutY="258.0" prefHeight="37.0" prefWidth="171.0" text="Reason :" textAlignment="RIGHT" textFill="#481feddb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtAddPatientReason" layoutX="228.0" layoutY="259.0" onKeyReleased="#on_key_released" prefHeight="90.0" prefWidth="312.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="48.0" layoutY="357.0" prefHeight="37.0" prefWidth="171.0" text="Illness :" textAlignment="RIGHT" textFill="#481feddb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtAddPatientIllness" layoutX="228.0" layoutY="358.0" onKeyReleased="#on_key_released" prefHeight="90.0" prefWidth="312.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="49.0" layoutY="457.0" prefHeight="37.0" prefWidth="171.0" text="Reports :" textAlignment="RIGHT" textFill="#481feddb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtAddPatientReports" layoutX="229.0" layoutY="458.0" onKeyReleased="#on_key_released" prefHeight="90.0" prefWidth="312.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="48.0" layoutY="553.0" prefHeight="37.0" prefWidth="171.0" text="Medicine :" textAlignment="RIGHT" textFill="#481feddb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtAddPatientMedicine" layoutX="228.0" layoutY="554.0" onKeyReleased="#on_key_released" prefHeight="90.0" prefWidth="312.0" />
+            <JFXButton fx:id="btnAddPatientADD" buttonType="RAISED" layoutX="423.0" layoutY="737.0" onAction="#AddPAtientToTheClinic" prefHeight="46.0" prefWidth="121.0" text="ADD">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="22.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/add-friend.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnAddPAtientCanel" buttonType="RAISED" layoutX="279.0" layoutY="737.0" onAction="#closeStage" prefHeight="43.0" prefWidth="131.0" text="Cansel">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label alignment="CENTER_RIGHT" layoutX="15.0" layoutY="93.0" prefHeight="37.0" prefWidth="105.0" text="Doctor ID :" textAlignment="RIGHT" textFill="#481feddb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAddDoctorID" disable="true" layoutX="128.0" layoutY="96.0" onKeyReleased="#on_key_released" prefHeight="31.0" prefWidth="91.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="649.0" prefHeight="37.0" prefWidth="171.0" text=" Steward Name :" textAlignment="RIGHT" textFill="#481feddb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtStewardName" layoutX="229.0" layoutY="652.0" onKeyReleased="#on_key_released" prefHeight="31.0" prefWidth="312.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="41.0" layoutY="686.0" prefHeight="37.0" prefWidth="181.0" text=" Steward Telephone :" textAlignment="RIGHT" textFill="#481feddb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtStewardTel" layoutX="230.0" layoutY="689.0" onKeyReleased="#on_key_released" prefHeight="31.0" prefWidth="312.0" />
+            <Label fx:id="lblClinicName" layoutX="292.0" layoutY="20.0" prefHeight="37.0" prefWidth="70.0" text="STD" textFill="#481feddb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="362.0" layoutY="21.0" prefHeight="37.0" prefWidth="112.0" text="CLINIC" textFill="#481feddb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="31.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="243.0" layoutY="93.0" prefHeight="37.0" prefWidth="105.0" text="Date :" textAlignment="RIGHT" textFill="#481feddb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" alignment="CENTER_RIGHT" layoutX="356.0" layoutY="93.0" prefHeight="43.0" prefWidth="208.0" text="2021-02-20" textAlignment="RIGHT" textFill="#481feddb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

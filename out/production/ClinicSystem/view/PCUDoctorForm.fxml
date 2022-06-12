@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="PCUContext" prefHeight="893.0" prefWidth="828.0" style="-fx-background-color: #00FFFF;" stylesheets="@../StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PCUDoctorFormController">
+   <children>
+      <Label layoutX="559.0" layoutY="93.0" prefHeight="39.0" prefWidth="72.0" text="Date  :">
+         <font>
+            <Font name="Baskerville Old Face" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbldate" layoutX="650.0" layoutY="93.0" prefHeight="39.0" prefWidth="115.0" text="2021-03-01">
+         <font>
+            <Font name="Baskerville Old Face" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSection" layoutX="36.0" layoutY="35.0" opacity="0.87" text="PCU" textFill="#3049ff" AnchorPane.leftAnchor="36.0">
+         <font>
+            <Font name="Elephant" size="39.0" />
+         </font>
+      </Label>
+      <Separator layoutX="135.0" layoutY="70.0" prefHeight="0.0" prefWidth="637.0" />
+      <JFXTextField fx:id="txtPatientID" focusColor="#472bff" labelFloat="true" layoutX="36.0" layoutY="168.0" prefHeight="38.0" prefWidth="207.0" promptText="Patient ID  :" unFocusColor="BLACK">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnPCUSearch" buttonType="RAISED" layoutX="278.0" layoutY="172.0" onAction="#LoadPatientDetails" prefHeight="31.0" prefWidth="128.0" stylesheets="@../StyleSheet.css" text="Search">
+         <font>
+            <Font name="Bookman Old Style Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtPatientName" disable="true" focusColor="#472bff" labelFloat="true" layoutX="37.0" layoutY="241.0" prefHeight="38.0" prefWidth="452.0" promptText="Patient Name  :" unFocusColor="BLACK">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPatientAge" disable="true" focusColor="#472bff" labelFloat="true" layoutX="583.0" layoutY="241.0" prefHeight="38.0" prefWidth="207.0" promptText="Patient Age  :" unFocusColor="BLACK">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextArea fx:id="txtReason" disable="true" labelFloat="true" layoutX="36.0" layoutY="323.0" prefHeight="101.0" prefWidth="348.0" promptText="Reason  :">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextArea fx:id="txtIllness" labelFloat="true" layoutX="36.0" layoutY="456.0" prefHeight="101.0" prefWidth="752.0" promptText="Illness  :">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextArea fx:id="txtMedicine" labelFloat="true" layoutX="36.0" layoutY="590.0" prefHeight="94.0" prefWidth="752.0" promptText="Medicine  :">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </JFXTextArea>
+      <RadioButton fx:id="rbtGohome" layoutX="38.0" layoutY="727.0" mnemonicParsing="false" onAction="#getOption" text="Can Go Home">
+         <font>
+            <Font name="Baskerville Old Face" size="17.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="option" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdbHAvetoAdmit" layoutX="205.0" layoutY="727.0" mnemonicParsing="false" onAction="#getOption" text="Wants to Admit" toggleGroup="$option">
+         <font>
+            <Font name="Baskerville Old Face" size="17.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdbAttendClinic" layoutX="375.0" layoutY="727.0" mnemonicParsing="false" onAction="#getOption" text="Atend to clinic" toggleGroup="$option">
+         <font>
+            <Font name="Baskerville Old Face" size="17.0" />
+         </font>
+      </RadioButton>
+      <JFXComboBox fx:id="cmbClinics" layoutX="563.0" layoutY="723.0" prefHeight="31.0" prefWidth="229.0" />
+      <JFXButton fx:id="btnPCUAttend" buttonType="RAISED" layoutX="662.0" layoutY="802.0" onAction="#SaveDetailsSpesificClinicTable" prefHeight="31.0" prefWidth="128.0" stylesheets="@../StyleSheet.css" text="Attend">
+         <font>
+            <Font name="Bookman Old Style Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnPCUCasel" buttonType="RAISED" layoutX="519.0" layoutY="802.0" onAction="#GoToDashBoard" prefHeight="31.0" prefWidth="128.0" stylesheets="@../StyleSheet.css" text="Cansel">
+         <font>
+            <Font name="Bookman Old Style Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="509.0" layoutY="133.0" prefHeight="39.0" prefWidth="115.0" text="Doctor ID  :">
+         <font>
+            <Font name="Baskerville Old Face" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbldoctorID" layoutX="647.0" layoutY="133.0" prefHeight="39.0" prefWidth="72.0" text="D-001">
+         <font>
+            <Font name="Baskerville Old Face" size="23.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtReports" labelFloat="true" layoutX="426.0" layoutY="323.0" prefHeight="101.0" prefWidth="366.0" promptText="Reports  :">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>

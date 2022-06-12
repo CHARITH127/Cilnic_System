@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="receptionFormContext" prefHeight="572.0" prefWidth="925.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionFormController">
+   <children>
+      <AnchorPane fx:id="repSlideBarContext" prefHeight="572.0" prefWidth="280.0" stylesheets="@../StyleSheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="645.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutX="20.0" layoutY="241.0" prefHeight="223.0" prefWidth="240.0">
+               <children>
+                  <JFXButton fx:id="btnrepOPD" buttonType="RAISED" onAction="#OpenOPDCounterForm" prefHeight="46.0" prefWidth="240.0" stylesheets="@../StyleSheet.css" text="OPD Counter">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="btnrepPCU" layoutX="10.0" layoutY="10.0" onAction="#OpenPCUCounterForm" prefHeight="46.0" prefWidth="240.0" stylesheets="@../StyleSheet.css" text="PCU Counter">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="btnrepAdmission" layoutX="10.0" layoutY="56.0" onAction="#OpenAdmissionRoomForm" prefHeight="46.0" prefWidth="240.0" stylesheets="@../StyleSheet.css" text="Admission Room">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <Label layoutX="40.0" layoutY="175.0" opacity="0.61" prefHeight="38.0" prefWidth="201.0" text="Reception Dashborad" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="187.0" layoutX="65.0" layoutY="25.0" opacity="0.61" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/call_centre@2x.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="loadUnit" layoutX="291.0" layoutY="9.0" prefHeight="555.0" prefWidth="625.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="291.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="9.0">
+         <children>
+            <ImageView fitHeight="555.0" fitWidth="625.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assest/istockphoto-1152974387-170667a.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

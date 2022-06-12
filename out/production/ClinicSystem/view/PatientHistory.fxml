@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="579.0" prefWidth="983.0" style="-fx-background-color: #00BFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PatientHistoryController">
+   <children>
+      <TextField fx:id="txtPatientHistoryID" layoutX="159.0" layoutY="43.0" prefHeight="31.0" prefWidth="256.0" promptText="123123V" stylesheets="@../StyleSheet.css" />
+      <Label layoutX="40.0" layoutY="45.0" prefHeight="27.0" prefWidth="119.0" text="Patient ID  :">
+         <font>
+            <Font name="Baskerville Old Face" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnSearch" buttonType="RAISED" layoutX="428.0" layoutY="43.0" onAction="#SearchPatientHistory" prefHeight="31.0" prefWidth="106.0" stylesheets="@../StyleSheet.css" text="Search">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bookman Old Style Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="lblPatientDetails" layoutX="15.0" layoutY="155.0" prefHeight="89.0" prefWidth="957.0" stylesheets="@../StyleSheet.css">
+        <columns>
+          <TableColumn fx:id="colPatientName" prefWidth="281.0" text="Patient Name" />
+          <TableColumn fx:id="colPatientAge" prefWidth="216.0" text="Patient Age " />
+            <TableColumn fx:id="colStewName" prefWidth="261.0" text="Steward Name" />
+            <TableColumn fx:id="colStewTel" minWidth="0.0" prefWidth="198.0" text="Steward Tele:" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <Label layoutX="23.0" layoutY="110.0" text="Patient Details" textFill="#4c42ff">
+         <font>
+            <Font name="Bookman Old Style Bold" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="233.0" layoutY="132.0" prefHeight="3.0" prefWidth="737.0" />
+      <Label layoutX="15.0" layoutY="264.0" text="Patient History" textFill="#4c42ff">
+         <font>
+            <Font name="Bookman Old Style Bold" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="233.0" layoutY="288.0" prefHeight="3.0" prefWidth="737.0" />
+      <TableView fx:id="tblHistory" layoutX="19.0" layoutY="302.0" prefHeight="266.0" prefWidth="957.0" stylesheets="@../StyleSheet.css">
+        <columns>
+          <TableColumn fx:id="colClinicDate" prefWidth="157.0" text="Cinic Date" />
+          <TableColumn fx:id="colClinicName" prefWidth="151.0" text="Clinic Name" />
+            <TableColumn fx:id="colReason" prefWidth="119.0" text="Reason" />
+            <TableColumn fx:id="colIllness" prefWidth="136.0" text="Illness" />
+            <TableColumn fx:id="colReports" prefWidth="149.0" text="Reports" />
+            <TableColumn fx:id="colMedicine" prefWidth="147.0" text="Medicine" />
+            <TableColumn fx:id="colDoctorID" prefWidth="97.0" text="Doctor ID" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+   </children>
+</AnchorPane>

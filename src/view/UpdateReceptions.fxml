@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="369.0" prefWidth="510.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateReceptionsController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Update Receptionist">
+         <font>
+            <Font name="Book Antiqua Bold" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="270.0" layoutY="37.0" prefHeight="0.0" prefWidth="215.0" />
+      <JFXTextField fx:id="txtReceptionID" labelFloat="true" layoutX="14.0" layoutY="90.0" prefHeight="31.0" prefWidth="197.0" promptText="Reception ID  :" />
+      <JFXTextField fx:id="txtReceptionName" labelFloat="true" layoutX="14.0" layoutY="152.0" prefHeight="31.0" prefWidth="476.0" promptText="Reception Name  :" />
+      <JFXTextField fx:id="txtReceptionTel" labelFloat="true" layoutX="14.0" layoutY="229.0" prefHeight="31.0" prefWidth="197.0" promptText="Reception Tel  :" />
+      <JFXTextField fx:id="txtReceptionPAssword" labelFloat="true" layoutX="296.0" layoutY="226.0" prefHeight="31.0" prefWidth="197.0" promptText="Reception Password  :" />
+      <JFXButton fx:id="btnUpdateReception" buttonType="RAISED" layoutX="329.0" layoutY="295.0" onAction="#UpdateReception" prefHeight="34.0" prefWidth="167.0" stylesheets="@../StyleSheet.css" text="Update">
+         <font>
+            <Font name="Bookman Old Style Bold" size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/projectImages/leader.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnCansel" buttonType="RAISED" layoutX="145.0" layoutY="295.0" prefHeight="44.0" prefWidth="158.0" stylesheets="@../StyleSheet.css" text="Cansel" />
+      <JFXButton fx:id="btnSearchReception" buttonType="RAISED" layoutX="242.0" layoutY="84.0" onAction="#SearchReception" prefHeight="34.0" prefWidth="167.0" stylesheets="@../StyleSheet.css" text="search">
+         <font>
+            <Font name="Bookman Old Style Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

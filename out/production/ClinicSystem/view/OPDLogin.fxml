@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="OPDLoginContext" prefHeight="455.0" prefWidth="600.0" style="-fx-background-color: #4C7AEF;" stylesheets="@../StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OPDLoginController">
+   <children>
+      <ImageView fitHeight="121.0" fitWidth="154.0" layoutX="241.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/doctor@2x.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="205.0" layoutY="143.0" text="Login to OPD">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtOPDUserName" focusColor="WHITE" labelFloat="true" layoutX="77.0" layoutY="212.0" prefHeight="39.0" prefWidth="449.0" promptText="Doctor ID" unFocusColor="#1c12da" />
+      <JFXPasswordField fx:id="txtOPDPassword" focusColor="#e8e8e8" labelFloat="true" layoutX="80.0" layoutY="287.0" prefHeight="39.0" prefWidth="449.0" promptText="Password" unFocusColor="#212cff" />
+      <JFXButton fx:id="btnOPDLogin" buttonType="RAISED" layoutX="170.0" layoutY="377.0" onAction="#logInToOPD" prefHeight="39.0" prefWidth="269.0" stylesheets="@../StyleSheet.css" text="Login">
+         <font>
+            <Font name="Bookman Old Style Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="46.0" fitWidth="63.0" layoutX="480.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icons8-user-male-90.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="63.0" layoutX="480.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icons8-password-96.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="423.0" layoutY="336.0" text="Fogot Password ?" textFill="#f8f8f8">
+         <font>
+            <Font name="Book Antiqua Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

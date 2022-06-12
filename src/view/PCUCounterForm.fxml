@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="555.0" prefWidth="625.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PCUCounterFormController">
+   <children>
+      <Label layoutX="27.0" layoutY="27.0" text="Date  :" textFill="#4605f8">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="86.0" layoutY="27.0" prefHeight="22.0" prefWidth="167.0" text="2021/10/31" textFill="#4605f8">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="93.0" prefHeight="25.0" prefWidth="144.0" text="Patient ID       :" textFill="#4605f8">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPatientID" layoutX="172.0" layoutY="90.0" onKeyReleased="#on_key_Released" prefHeight="31.0" prefWidth="155.0" />
+      <Label layoutX="341.0" layoutY="93.0" text="Patient Age  :" textFill="#4605f8">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPatientAge" layoutX="462.0" layoutY="90.0" onKeyReleased="#on_key_Released" prefHeight="31.0" prefWidth="141.0" />
+      <Label layoutX="27.0" layoutY="134.0" text="Patient Name  :" textFill="#4605f8">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPatientName" layoutX="172.0" layoutY="131.0" onKeyReleased="#on_key_Released" prefHeight="31.0" prefWidth="432.0" />
+      <Label layoutX="31.0" layoutY="177.0" prefHeight="25.0" prefWidth="133.0" text="Reason             :" textFill="#4605f8">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtPatientReason" layoutX="174.0" layoutY="178.0" onKeyReleased="#on_key_Released" prefHeight="145.0" prefWidth="432.0" />
+      <Label layoutX="28.0" layoutY="343.0" prefHeight="25.0" prefWidth="144.0" text="Steward Name :" textFill="#4605f8">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtStewardName" layoutX="173.0" layoutY="340.0" onKeyReleased="#on_key_Released" prefHeight="31.0" prefWidth="432.0" />
+      <Label layoutX="29.0" layoutY="381.0" prefHeight="77.0" prefWidth="141.0" text="Steward's Telephone Number             " textFill="#4605f8" wrapText="true">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtStewardTel" layoutX="174.0" layoutY="404.0" onKeyReleased="#on_key_Released" prefHeight="31.0" prefWidth="198.0" />
+      <JFXButton fx:id="btnaddPatient" buttonType="RAISED" layoutX="472.0" layoutY="465.0" onAction="#AddPatient" prefHeight="31.0" prefWidth="133.0" stylesheets="@../StyleSheet.css" text="Add++">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bookman Old Style Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

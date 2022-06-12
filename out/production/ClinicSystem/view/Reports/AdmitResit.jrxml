@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AdmitResit" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="27f5c7e2-b2e3-4945-95d0-cf208aa17e7a">
+	<parameter name="patientID" class="java.lang.String"/>
+	<parameter name="patientName" class="java.lang.String"/>
+	<parameter name="patientAge" class="java.lang.String"/>
+	<parameter name="Reason" class="java.lang.String"/>
+	<parameter name="illness" class="java.lang.String"/>
+	<parameter name="reports" class="java.lang.String"/>
+	<parameter name="medicine" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="doctorID" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="58" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="8" width="555" height="42" forecolor="#3716F5" uuid="9555d3d3-fb13-42eb-bda3-95073ef1dd57"/>
+				<textElement textAlignment="Center">
+					<font size="29" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ADMIT RESIT]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="673" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="32" width="100" height="30" forecolor="#7B78CF" uuid="778e8834-8878-49bc-a949-867cc14e30bc"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Patient ID :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="80" width="100" height="30" forecolor="#7B78CF" uuid="fbd605fb-0427-4214-8db1-bf4664a50fd8"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Patient Name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="130" width="100" height="30" forecolor="#7B78CF" uuid="96a9056f-6508-434d-8817-89d287852608"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Patient Age :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="173" width="100" height="30" forecolor="#7B78CF" uuid="7ac1de38-19a2-4877-b53f-83d25d8d7c6b"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Reason :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="254" width="100" height="30" forecolor="#7B78CF" uuid="49c9271c-50b5-4f22-8ba4-55a49bf28456"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Illness :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="338" width="100" height="30" forecolor="#7B78CF" uuid="801495ff-459b-48ed-9e61-2e943580e8f3"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Reports :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="516" width="120" height="30" forecolor="#7B78CF" uuid="d75016d2-267f-44ed-83e6-f438e37f2f58"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Admission Date :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="415" width="100" height="30" forecolor="#7B78CF" uuid="6d68a1d8-77bd-46a9-9474-b8a2180d9fa4"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Medicine :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="590" width="120" height="30" forecolor="#7B78CF" uuid="5c66c4f2-32e8-4a85-8696-bdc3ff5d2a74"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Doctor ID :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="377" y="628" width="120" height="30" forecolor="#7B78CF" uuid="ba9b93be-97ed-49ba-b3dd-49af2b63761a"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Signature]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="610" width="180" height="30" forecolor="#7B78CF" uuid="456e11e3-df81-4964-9c54-1e4a0bd883b7"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[........................................]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="188" y="33" width="100" height="29" uuid="09b2e6b9-b4e3-4941-aeed-44a05e4ba0f4"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{patientID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="188" y="83" width="100" height="30" uuid="55544fbf-8b3f-4411-9715-f55853343e70"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{patientName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="135" width="100" height="30" uuid="109c4eef-c7ef-4bf7-8277-b72e2578dd3a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{patientAge}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="178" width="290" height="62" uuid="4e8b2b32-e844-464f-81a5-60182dbeef67"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{illness}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="188" y="260" width="292" height="60" uuid="159d2ff6-9d96-4028-8a94-97366952f7d4"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{illness}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="341" width="290" height="59" uuid="9eee85ea-52f7-4770-9149-046e825dc36d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reports}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="188" y="417" width="292" height="83" uuid="e430337b-1e55-4e7a-b89d-6e09d386f06f"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{medicine}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="521" width="150" height="25" uuid="554cc418-e7b2-46b7-992b-14c2414e1b40"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="592" width="100" height="30" uuid="030928d2-8eba-4f83-aa28-8cdc90fac8be"/>
+				<textFieldExpression><![CDATA[$P{doctorID}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

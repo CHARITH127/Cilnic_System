@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="SurgicalClinicContext" prefHeight="769.0" prefWidth="1415.0" style="-fx-background-color: #0000#0000CD80;" stylesheets="@../StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SurgicalClinicFormContrller">
+   <children>
+      <AnchorPane fx:id="headBarContext" layoutX="-2.0" layoutY="-1.0" prefHeight="77.0" prefWidth="1417.0" style="-fx-background-color: #0000FF;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="26.0" layoutY="1.0" prefHeight="76.0" prefWidth="267.0" text="Surgical Clinic" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="37.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/projectImages/surgical_sterilization@2x.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Button fx:id="btnAddPatient" layoutX="1312.0" layoutY="16.0" mnemonicParsing="false" onAction="#AddPatientsToClinics">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/projectImages/add-friend.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnGoBack" layoutX="1240.0" layoutY="15.0" mnemonicParsing="false" onAction="#GoToClinicForm">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/projectImages/tabler-icon-arrow-bar-left.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="15.0" layoutY="92.0" prefHeight="76.0" prefWidth="594.0">
+         <children>
+            <AnchorPane fx:id="DoctorIdPane" opacity="0.84" prefHeight="76.0" prefWidth="276.0" style="-fx-background-color: #00BFFF;">
+               <children>
+                  <Label layoutX="8.0" layoutY="13.0" prefHeight="47.0" prefWidth="156.0" text="Doctor ID :" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblClinicDoctorID" layoutX="178.0" layoutY="15.0" prefHeight="47.0" prefWidth="86.0" text="D-001" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="29.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </AnchorPane>
+            <AnchorPane fx:id="DoctorIdPane" opacity="0.84" prefHeight="89.0" prefWidth="275.0" style="-fx-background-color: #00BFFF;">
+               <children>
+                  <Label layoutX="10.0" layoutY="13.0" prefHeight="47.0" prefWidth="103.0" text="Date  :" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblClinicDate" layoutX="105.0" layoutY="15.0" prefHeight="47.0" prefWidth="148.0" text="2-10-2021" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="29.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="patientPan" layoutX="22.0" layoutY="183.0" prefHeight="566.0" prefWidth="594.0" style="-fx-background-color: #ffffff;" stylesheets="@../StyleSheet.css">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label alignment="CENTER_RIGHT" layoutX="52.0" layoutY="9.0" prefHeight="47.0" prefWidth="127.0" text="Patient ID :" textFill="#0000ffa0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPatientName" layoutX="188.0" layoutY="56.0" prefHeight="31.0" prefWidth="385.0" />
+            <Button fx:id="btnPtientSearch" layoutX="397.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadPatientDetails" prefHeight="38.0" prefWidth="43.0">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/projectImages/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="48.0" prefHeight="47.0" prefWidth="165.0" text="Patient Name :" textFill="#0000ffa0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPatientID" layoutX="187.0" layoutY="17.0" prefHeight="31.0" prefWidth="203.0" />
+            <TextField fx:id="txtPatientAge" layoutX="188.0" layoutY="95.0" prefHeight="31.0" prefWidth="385.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="87.0" prefHeight="47.0" prefWidth="165.0" text="Patient Age :" textFill="#0000ffa0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="13.0" layoutY="127.0" prefHeight="47.0" prefWidth="165.0" text="Reason :" textFill="#0000ffa0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtPatientReason" layoutX="187.0" layoutY="134.0" prefHeight="39.0" prefWidth="385.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="13.0" layoutY="221.0" prefHeight="47.0" prefWidth="165.0" text="Reports :" textFill="#0000ffa0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtPatientReports" layoutX="187.0" layoutY="228.0" prefHeight="116.0" prefWidth="385.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="343.0" prefHeight="47.0" prefWidth="165.0" text="Medicine :" textFill="#0000ffa0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtPatientMedicines" layoutX="188.0" layoutY="350.0" prefHeight="152.0" prefWidth="385.0" />
+            <TextField fx:id="txtPatientIllness" layoutX="186.0" layoutY="189.0" prefHeight="31.0" prefWidth="385.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="5.0" layoutY="181.0" prefHeight="47.0" prefWidth="172.0" text="Patient Illness :" textFill="#0000ffa0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="17.0" layoutY="513.0" prefHeight="39.0" prefWidth="193.0" text="Next Clinic Date :" textFill="#0000ffa0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="datePicker" layoutX="215.0" layoutY="518.0" prefHeight="31.0" prefWidth="240.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="patientHistoryPan" layoutX="639.0" layoutY="92.0" prefHeight="575.0" prefWidth="759.0" style="-fx-background-color: #ffffff;" stylesheets="@../StyleSheet.css">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="47.0" prefWidth="267.0" text="Patient History" textFill="#3124c7b8">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="29.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/projectImages/tabler-icon-history.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Separator layoutX="267.0" layoutY="50.0" prefHeight="2.0" prefWidth="470.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="61.0" prefHeight="47.0" prefWidth="127.0" text="Patient ID :" textFill="#0000ffa0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnPtientHistorySearch" layoutX="359.0" layoutY="62.0" mnemonicParsing="false" onAction="#SearchOnPatientHistory" prefHeight="38.0" prefWidth="43.0">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/projectImages/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="txtpatientHistorySearch" layoutX="149.0" layoutY="69.0" prefHeight="31.0" prefWidth="203.0" />
+            <TableView fx:id="tblEyeClinicPatiantHistory" layoutX="20.0" layoutY="115.0" prefHeight="444.0" prefWidth="719.0">
+              <columns>
+                <TableColumn fx:id="colDate" prefWidth="161.0" text="Date" />
+                <TableColumn fx:id="colReports" prefWidth="200.0" text="Reports" />
+                  <TableColumn fx:id="colMedicine" prefWidth="225.0" text="Medicine" />
+                  <TableColumn fx:id="colDoctorID" prefWidth="132.0" text="Doctor ID" />
+              </columns>
+            </TableView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <JFXButton fx:id="btnSurgicalClinicAdmit" buttonType="RAISED" layoutX="1168.0" layoutY="691.0" onAction="#ToAdmit" text="Wants To Admit">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/projectImages/observation@2x.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Bookman Old Style Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnSurgicalClinicGoHome" buttonType="RAISED" layoutX="917.0" layoutY="691.0" onAction="#DeleteThePatientDetails" text="Can Go Home">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/projectImages/icons8-user-male-90.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Bookman Old Style Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnSurgicalClinicUpdate" buttonType="RAISED" layoutX="666.0" layoutY="691.0" onAction="#UpdateTheClinicTable" prefHeight="52.0" prefWidth="203.0" text="Update">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/projectImages/medical_records@2x.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Bookman Old Style Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

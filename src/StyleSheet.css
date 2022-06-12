@@ -1,0 +1,1387 @@
+#OPDLoginContext{
+    -fx-background-color:#4C7AEF;
+}
+#btnOPDLogin{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnOPDLogin:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#btnPCULogin{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnPCULogin:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#btnAdmissionRoomLogin{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnAdmissionRoomLogin:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#DashBoardContext{
+    -fx-background-color: transparent;
+}
+
+#dashboardPane{
+    -fx-background-color: blue;
+}
+
+#btnContinue{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnContinue:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#btnMaximize{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+#btnMinimize{
+    -fx-border-color:  transparent;
+    -fx-background-color: transparent;
+}
+#btnClose{
+    -fx-border-color:  transparent;
+    -fx-background-color: transparent;
+}
+#btnClose:hover{
+    -fx-border-color:  transparent;
+    -fx-background-color: red;
+}
+#btnMinimize:hover{
+    -fx-border-color:  transparent;
+    -fx-background-color: white;
+}
+#btnMaximize:hover{
+    -fx-border-color: transparent;
+    -fx-background-color: white;
+}
+
+#btnReceptionLogin{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnReceptionLogin:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#btnReceptionist{
+    fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnReceptionist:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#btnOPDDoctor{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnOPDDoctor:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#btnPCUDoctor{
+    -fx-background-radius:20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnPCUDoctor:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#btnAdmissionRoom{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnAdmissionRoom:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#btnManagement{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnManagement:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#repSlideBarContext{
+    -fx-background-color: blue;
+    -fx-background-radius: 0px 40px 0px 0px;
+}
+
+#btnrepOPD{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnrepOPD:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#btnrepPCU{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnrepPCU:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#btnrepAdmission{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnrepAdmission:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#btnClinic{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#btnaddPatient{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-background-color: transparent;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+
+#btnaddPatient:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-background-color: blue ;
+    -fx-text-fill:white;
+}
+
+#OPDContext{
+    -fx-background-color: 	#00FFFF;
+}
+
+#btnOPDSearch{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+
+#btnOPDSearch:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#btnOPDAttend{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+
+#btnOPDAttend:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#btnOPDCasel{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+
+#btnOPDCasel:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: red ;
+    -fx-text-fill:white;
+}
+
+#btnPCUSearch{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+
+#btnPCUSearch:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#btnPCUCasel{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+
+#btnPCUCasel:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: red ;
+    -fx-text-fill:white;
+}
+
+#btnPCUAttend{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+
+#btnPCUAttend:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#btnAdmitSearch{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+
+#btnAdmitSearch:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#btnAdmitAttend{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+
+#btnAdmitAttend:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#btnAdmitUpdate{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+
+#btnAdmitUpdate:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#btnAdmitCasel{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+
+#btnAdmitCasel:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: red ;
+    -fx-text-fill:white;
+}
+#MangemntSidePan{
+    -fx-background-color: blue;
+    -fx-background-radius: 0px 40px 0px 0px;
+}
+
+#btnPatientHistory{
+    fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnPatientHistory:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#btnClinicRates{
+    fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnClinicRates:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#btnDoctorDetails{
+    fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnDoctorDetails:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#topPAne{
+    -fx-background-radius: 0px 20px 0px 20px;
+}
+
+#btnManagemntLogin{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnManagemntLogin:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+
+#btnSearch{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnSearch:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: blue ;
+    -fx-text-fill:white;
+}
+#tblPatientHistory{
+    -fx-background-color: transparent;
+}
+
+#btnAddDoctor{
+    fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnAddDoctor:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: blue ;
+    -fx-text-fill:white;
+}
+
+#btnCansel{
+    -fx-background-radius: 15;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+
+#btnCansel:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: red ;
+    -fx-text-fill:white;
+}
+
+#btnSearchDoctor{
+   -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnSearchDoctor:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: blue ;
+    -fx-text-fill:white;
+}
+#btnDeleteDoctor{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnDeleteDoctor:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: blue ;
+    -fx-text-fill:white;
+}
+
+#btnEyeClinic{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: 	#00FF7F;
+    -fx-background-color:white ;
+    -fx-text-fill: 	#00FF7F;
+}
+#btnEyeClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: 	#00FF7F ;
+    -fx-text-fill:white;
+}
+
+#eyeclinicPane{
+    -fx-background-radius: 10px 10px 10px 10px;
+}
+
+#btnENTClinic{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: 	#00FF7F;
+    -fx-background-color:white ;
+    -fx-text-fill: 	#00FF7F;
+}
+#btnENTClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: 	#00FF7F ;
+    -fx-text-fill:white;
+}
+#ENTclinicPane{
+    -fx-background-radius: 10px 10px 10px 10px;
+}
+#btnSurgicalClinic{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: 	#00FF7F;
+    -fx-background-color:white ;
+    -fx-text-fill: 	#00FF7F;
+}
+#btnSurgicalClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: 	#00FF7F ;
+    -fx-text-fill:white;
+}
+#SurgicalclinicPane{
+    -fx-background-radius: 10px 10px 10px 10px;
+}
+
+#btnMedicalClinic{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: 	#00FF7F;
+    -fx-background-color:white ;
+    -fx-text-fill: 	#00FF7F;
+}
+#btnMedicalClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: 	#00FF7F ;
+    -fx-text-fill:white;
+}
+#MedicalclinicPane{
+    -fx-background-radius: 10px 10px 10px 10px;
+}
+#btnSTDClinic {
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: 	#00FF7F;
+    -fx-background-color:white ;
+    -fx-text-fill: 	#00FF7F;
+}
+#btnSTDClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: 	#00FF7F ;
+    -fx-text-fill:white;
+}
+#STDclinicPane{
+    -fx-background-radius: 10px 10px 10px 10px;
+}
+#btnWellBabyClinic {
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: 	#00FF7F;
+    -fx-background-color:white ;
+    -fx-text-fill: 	#00FF7F;
+}
+#btnWellBabyClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: 	#00FF7F ;
+    -fx-text-fill:white;
+}
+#wellBabyPane{
+    -fx-background-radius: 10px 10px 10px 10px;
+}
+#btnpeadiatricClinic {
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: 	#00FF7F;
+    -fx-background-color:white ;
+    -fx-text-fill: 	#00FF7F;
+}
+#btnpeadiatricClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: 	#00FF7F ;
+    -fx-text-fill:white;
+}
+#peadiatricPan{
+    -fx-background-radius: 10px 10px 10px 10px;
+}
+#btnGynObsClinic {
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: 	#00FF7F;
+    -fx-background-color:white ;
+    -fx-text-fill: 	#00FF7F;
+}
+#btnGynObsClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: 	#00FF7F ;
+    -fx-text-fill:white;
+}
+#GynObsclinicPane{
+    -fx-background-radius: 10px 10px 10px 10px;
+}
+#btnfamilyMedicalClinic {
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: 	#00FF7F;
+    -fx-background-color:white ;
+    -fx-text-fill: 	#00FF7F;
+}
+#btnfamilyMedicalClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: 	#00FF7F ;
+    -fx-text-fill:white;
+}
+#FamilyMedicalPane{
+    -fx-background-radius: 10px 10px 10px 10px;
+}
+#btnCanserClinic {
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: 	#00FF7F;
+    -fx-background-color:white ;
+    -fx-text-fill: 	#00FF7F;
+}
+#btnCanserClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: 	#00FF7F ;
+    -fx-text-fill:white;
+}
+#CanserPan{
+    -fx-background-radius: 10px 10px 10px 10px;
+}
+#btnLoginEyeClinic{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnLoginEyeClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+
+#btnLoginENTClinic{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnLoginENTClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#btnLoginSurgicalClinic{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnLoginSurgicalClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#btnLoginMedicalClinic{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnLoginMedicalClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#btnLoginSTDClinic{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnLoginSTDClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#btnLoginWellBabyClinic{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnLoginWellBabyClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#btnLoginPeadiatricClinic{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnLoginPeadiatricClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#btnLoginGynObsClinic{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnLoginGynObsClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#btnLoginFamilyMedicalClinic{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnLoginFamilyMedicalClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#btnLoginCancerClinic{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#btnLoginCancerClinic:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#btnBack{
+   -fx-background-color: transparent;
+}
+
+#btnBack:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: white ;
+    -fx-text-fill:blue;
+}
+#headBarContext{
+    -fx-border-radius: 0px 0px 20px 20px;
+    -fx-background-radius: 0px 0px 20px 20px;
+}
+#btnAddPatient{
+    -fx-background-color: transparent;
+}
+#DoctorIdPane{
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+#btnPtientSearch{
+    -fx-background-color: transparent;
+}
+
+#patientPan{
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+#patientHistoryPan{
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+
+#btnPtientHistorySearch{
+    -fx-background-color: transparent;
+}
+#btnEyeClinicUpdate{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnEyeClinicUpdate:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnEyeClinicGoHome{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnEyeClinicGoHome:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnEyeClinicAdmit{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnEyeClinicAdmit:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnGoBack{
+    -fx-background-color: transparent;
+}
+#btnENTClinicAdmit{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnENTClinicAdmit:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnENTClinicGoHome{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnENTClinicGoHome:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnENTClinicUpdate{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnENTClinicUpdate:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnSurgicalClinicGoHome{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnSurgicalClinicGoHome:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnSurgicalClinicAdmit{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnSurgicalClinicAdmit:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnSurgicalClinicUpdate{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnSurgicalClinicUpdate:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnSTDClinicUpdate{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnSTDClinicUpdate:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnSTDClinicGoHome{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnSTDClinicGoHome:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnSTDClinicAdmit{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnSTDClinicAdmit:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnWellBbyClinicUpdate{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnWellBbyClinicUpdate:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnWellBbyClinicGoHome{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnWellBbyClinicGoHome:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnWellBbyClinicAdmit{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnWellBbyClinicAdmit:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnPeadiatricClinicUpdate{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnPeadiatricClinicUpdate:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnPeadiatricClinicGoHome{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnPeadiatricClinicGoHome:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnPeadiatricClinicAdmit{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnPeadiatricClinicAdmit:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnGynObsClinicAdmit{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnGynObsClinicAdmit:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnGynObsClinicGoHome{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnGynObsClinicGoHome:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnGynObsClinicUpdate{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnGynObsClinicUpdate:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnFamilyMedicalClinicUpdate{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnFamilyMedicalClinicUpdate:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnFamilyMedicalClinicGoHome{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnFamilyMedicalClinicGoHome:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnCancerClinicAdmit{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnCancerClinicAdmit:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnCancerClinicGoHome{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnCancerClinicGoHome:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnCancerClinicUpdate{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnCancerClinicUpdate:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnMedicalClinicAdmit{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnMedicalClinicAdmit:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnMedicalClinicGoHome{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnMedicalClinicGoHome:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnMedicalClinicUpdate{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnMedicalClinicUpdate:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+#btnSearchPatient{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnSearchPatient:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+
+#btnFamilyMedicalClinicAdmit{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+
+#btnFamilyMedicalClinicAdmit:hover{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-text-fill:white;
+    -fx-background-color: blue;
+}
+
+#lblDoctorID{
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-border-color: white;
+    -fx-background-color: white;
+    -fx-text-fill: blue;
+    -fx-text-alignment: center;
+}
+
+#AddPatientClinicPan{
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-background-color:#ADD8E6;
+}
+
+#btnAddPatientADD{
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-background-color: white;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+
+#btnAddPatientADD:hover{
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+#btnAddPAtientCanel{
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-background-color: white;
+    -fx-border-color: red;
+    -fx-text-fill: red;
+}
+
+#btnAddPAtientCanel:hover{
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+
+/*style of table vies============================================================*/
+.table-view{
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-background-insets: 0 0px 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+.table-row-cell:hover {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color: red;
+}
+.table-row-cell:odd{
+    -fx-background-color: #93f9b911;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell:even{
+    -fx-background-color: #1dbbdd11;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+}
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  linear-gradient(to right, #1dbbdd44, #93f9b944);
+}
+
+#txtPatientHistoryID{
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-background-color:white ;
+    -fx-text-fill:  blue;
+}
+
+#txtSpecializeArea{
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-background-color:white ;
+    -fx-text-fill:  blue;
+}
+
+#txtpatientHistorySearch{
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-background-color:	#00FFFF;
+    -fx-text-fill:blue;
+}
+#menuBar{
+    -fx-background-color: transparent;
+    -fx-font-size: 16;
+    -fx-font-family: "Bookman Old Style";
+}
+
+#btnReception{
+    fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnReception:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: blue ;
+    -fx-text-fill:white;
+}
+#btnUpdateReception{
+    fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+#btnUpdateReception:hover{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: blue ;
+    -fx-text-fill:white;
+}

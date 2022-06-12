@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="ClinicFormContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="952.0" style="-fx-background-color: #0000FF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClinicFormController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1250.0" prefWidth="950.0" style="-fx-background-color: #0000FF;">
+         <children>
+            <VBox layoutY="57.0" prefHeight="1200.0" prefWidth="945.0" AnchorPane.bottomAnchor="-60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="57.0">
+               <children>
+                  <HBox prefHeight="299.0" prefWidth="945.0">
+                     <children>
+                        <AnchorPane fx:id="eyeclinicPane" prefHeight="269.0" prefWidth="275.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../StyleSheet.css">
+                           <children>
+                              <ImageView fitHeight="74.0" fitWidth="216.0" layoutX="86.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assest/eye@2x.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="16.0" layoutY="77.0" prefHeight="98.0" prefWidth="232.0" text="Healthy eyes and great vision through compassionate,preventative eye care" textFill="#6730ff" wrapText="true">
+                                 <font>
+                                    <Font name="Baskerville Old Face" size="19.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="btnEyeClinic" buttonType="RAISED" layoutX="30.0" layoutY="192.0" onAction="#OpenEyeClinicLogin" prefHeight="37.0" prefWidth="205.0" stylesheets="@../StyleSheet.css" text="Eye Clinic ">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Bookman Old Style Bold" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="ENTclinicPane" prefHeight="228.0" prefWidth="262.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../StyleSheet.css">
+                           <children>
+                              <ImageView fitHeight="74.0" fitWidth="216.0" layoutX="86.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assest/ear@2x.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="16.0" layoutY="77.0" prefHeight="98.0" prefWidth="232.0" text="Transforming elective services Ear,Nose and Throat(ENT)" textFill="#6730ff" wrapText="true">
+                                 <font>
+                                    <Font name="Baskerville Old Face" size="19.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="btnENTClinic" buttonType="RAISED" layoutX="30.0" layoutY="194.0" onAction="#OpenENTClinicLogin" prefHeight="37.0" prefWidth="205.0" stylesheets="@../StyleSheet.css" text="ENT Clinic ">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Bookman Old Style Bold" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="SurgicalclinicPane" prefHeight="228.0" prefWidth="262.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../StyleSheet.css">
+                           <children>
+                              <ImageView fitHeight="74.0" fitWidth="216.0" layoutX="86.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assest/surgical_sterilization@2x.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="16.0" layoutY="86.0" prefHeight="98.0" prefWidth="232.0" text="Doctor: Your devotion and care brings healing,comfort,and hope" textFill="#6730ff" wrapText="true">
+                                 <font>
+                                    <Font name="Baskerville Old Face" size="19.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="btnSurgicalClinic" buttonType="RAISED" layoutX="23.0" layoutY="193.0" onAction="#OpenSurgicalClinicLogin" prefHeight="37.0" prefWidth="205.0" stylesheets="@../StyleSheet.css" text="Surgical Clinic ">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Bookman Old Style Bold" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="ScrollBarClinics" prefHeight="299.0" prefWidth="945.0">
+                     <children>
+                        <AnchorPane fx:id="MedicalclinicPane" prefHeight="269.0" prefWidth="275.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../StyleSheet.css">
+                           <children>
+                              <ImageView fitHeight="74.0" fitWidth="216.0" layoutX="86.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assest/cast@2x.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="16.0" layoutY="77.0" prefHeight="98.0" prefWidth="232.0" text="Medicines cure diseases but only doctors can cure patient" textFill="#6730ff" wrapText="true">
+                                 <font>
+                                    <Font name="Baskerville Old Face" size="19.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="btnMedicalClinic" buttonType="RAISED" layoutX="30.0" layoutY="192.0" onAction="#OpenMedicalClinicLogin" prefHeight="37.0" prefWidth="205.0" stylesheets="@../StyleSheet.css" text="Medical Clinic ">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Bookman Old Style Bold" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="STDclinicPane" prefHeight="228.0" prefWidth="262.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../StyleSheet.css">
+                           <children>
+                              <ImageView fitHeight="74.0" fitWidth="216.0" layoutX="86.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assest/vih@2x.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="16.0" layoutY="77.0" prefHeight="98.0" prefWidth="232.0" text="Sexually Transmitted Infections" textFill="#6730ff" wrapText="true">
+                                 <font>
+                                    <Font name="Baskerville Old Face" size="19.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="btnSTDClinic" buttonType="RAISED" layoutX="23.0" layoutY="195.0" onAction="#OpenSTDClinicLogin" prefHeight="37.0" prefWidth="205.0" stylesheets="@../StyleSheet.css" text="STD Clinic ">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Bookman Old Style Bold" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="wellBabyPane" prefHeight="228.0" prefWidth="262.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../StyleSheet.css">
+                           <children>
+                              <ImageView fitHeight="74.0" fitWidth="216.0" layoutX="86.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assest/baby_0306m@2x.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="16.0" layoutY="86.0" prefHeight="98.0" prefWidth="232.0" text="Well Baby Clinic" textFill="#6730ff" wrapText="true">
+                                 <font>
+                                    <Font name="Baskerville Old Face" size="19.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="btnWellBabyClinic" buttonType="RAISED" layoutX="23.0" layoutY="194.0" onAction="#OpenWellBabyClinicLogin" prefHeight="37.0" prefWidth="205.0" stylesheets="@../StyleSheet.css" text="Well Baby Clinic ">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Bookman Old Style Bold" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="299.0" prefWidth="945.0">
+                     <children>
+                        <AnchorPane fx:id="peadiatricPan" prefHeight="269.0" prefWidth="275.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../StyleSheet.css">
+                           <children>
+                              <ImageView fitHeight="74.0" fitWidth="216.0" layoutX="86.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assest/baby_0306m@2x.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="16.0" layoutY="97.0" prefHeight="80.0" prefWidth="232.0" text="Pediatric Slogans and Tagliness" textFill="#6730ff" wrapText="true">
+                                 <font>
+                                    <Font name="Baskerville Old Face" size="19.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="btnpeadiatricClinic" buttonType="RAISED" layoutX="30.0" layoutY="192.0" onAction="#OpenpeadiatricClinicLogin" prefHeight="37.0" prefWidth="205.0" stylesheets="@../StyleSheet.css" text="Peadiactric Clinic ">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Bookman Old Style Bold" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="GynObsclinicPane" prefHeight="228.0" prefWidth="262.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../StyleSheet.css">
+                           <children>
+                              <ImageView fitHeight="74.0" fitWidth="216.0" layoutX="86.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assest/ancv@2x.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="77.0" prefHeight="98.0" prefWidth="232.0" text="Gynecology and Obstetrics" textFill="#6730ff" wrapText="true">
+                                 <font>
+                                    <Font name="Baskerville Old Face" size="19.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="btnGynObsClinic" buttonType="RAISED" layoutX="24.0" layoutY="196.0" onAction="#OpenGynObslinicLogin" prefHeight="37.0" prefWidth="205.0" stylesheets="@../StyleSheet.css" text="GYN &amp; OBS Clinic ">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Bookman Old Style Bold" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="FamilyMedicalPane" prefHeight="228.0" prefWidth="262.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../StyleSheet.css">
+                           <children>
+                              <ImageView fitHeight="74.0" fitWidth="216.0" layoutX="86.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assest/male_and_female@2x.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="16.0" layoutY="86.0" prefHeight="98.0" prefWidth="232.0" text="Family is the Most Important Thing In The World" textFill="#6730ff" wrapText="true">
+                                 <font>
+                                    <Font name="Baskerville Old Face" size="19.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="btnfamilyMedicalClinic" buttonType="RAISED" layoutX="23.0" layoutY="194.0" onAction="#OpenfamilyMedicalClinicLogin" prefHeight="37.0" prefWidth="205.0" stylesheets="@../StyleSheet.css" text="Family Medical Clinic ">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Bookman Old Style Bold" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="287.0" prefWidth="945.0">
+                     <children>
+                        <AnchorPane fx:id="CanserPan" prefHeight="269.0" prefWidth="275.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../StyleSheet.css">
+                           <children>
+                              <ImageView fitHeight="74.0" fitWidth="216.0" layoutX="86.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assest/virus@2x.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="16.0" layoutY="97.0" prefHeight="80.0" prefWidth="232.0" text="There is &quot;Can&quot; Cancer because we can beat it." textFill="#6730ff" wrapText="true">
+                                 <font>
+                                    <Font name="Baskerville Old Face" size="19.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="btnCanserClinic" buttonType="RAISED" layoutX="30.0" layoutY="192.0" onAction="#OpenCanserClinicLogin" prefHeight="37.0" prefWidth="205.0" stylesheets="@../StyleSheet.css" text="Cancer Clinic ">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Bookman Old Style Bold" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button fx:id="btnBack" layoutX="835.0" layoutY="14.0" mnemonicParsing="false" onAction="#LoadDashBoard" stylesheets="@../StyleSheet.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assest/tabler-icon-arrow-bar-left.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="43.0" layoutY="20.0" text="Clinic Section" textFill="LIGHTCYAN">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="29.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

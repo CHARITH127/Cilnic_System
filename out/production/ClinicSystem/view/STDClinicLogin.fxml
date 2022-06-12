@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="STDClinicLoginContext" prefHeight="326.0" prefWidth="572.0" style="-fx-background-color: #4169E1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.STDClinicLoginController">
+   <children>
+      <Label layoutX="166.0" layoutY="14.0" opacity="0.67" text="Login To STD Clinic" textFill="#ebebeb">
+         <font>
+            <Font name="Baskerville Old Face" size="29.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDoctorID" labelFloat="true" layoutX="83.0" layoutY="116.0" opacity="0.89" prefHeight="38.0" prefWidth="425.0" promptText="Doctor ID" unFocusColor="WHITE">
+         <font>
+            <Font name="Bookman Old Style Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtDoctorPassword" focusColor="#0d46f2" labelFloat="true" layoutX="83.0" layoutY="188.0" prefHeight="39.0" prefWidth="425.0" promptText="Password" unFocusColor="WHITE">
+         <font>
+            <Font name="Bookman Old Style Bold" size="21.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="btnLoginSTDClinic" buttonType="RAISED" layoutX="83.0" layoutY="260.0" onAction="#GoToSTDClinic" prefHeight="31.0" prefWidth="425.0" stylesheets="@../StyleSheet.css" text="Login">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bookman Old Style Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="39.0" fitWidth="70.0" layoutX="462.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/doctor@2x.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="70.0" layoutX="462.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icons8-password-96.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
